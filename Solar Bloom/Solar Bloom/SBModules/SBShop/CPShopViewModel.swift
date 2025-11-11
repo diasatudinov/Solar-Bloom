@@ -1,3 +1,10 @@
+//
+//  CPShopViewModel.swift
+//  Solar Bloom
+//
+//
+
+
 import SwiftUI
 
 

@@ -1,13 +1,20 @@
+//
+//  ZZAchievementsViewModel.swift
+//  Solar Bloom
+//
+//
+
+
 import SwiftUI
 
 class ZZAchievementsViewModel: ObservableObject {
     
     @Published var achievements: [NEGAchievement] = [
-        NEGAchievement(image: "achieve1ImageCB", title: "achieve1TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve2ImageCB", title: "achieve2TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve3ImageCB", title: "achieve3TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve4ImageCB", title: "achieve4TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve5ImageCB", title: "achieve5TextCB", isAchieved: false),
+        NEGAchievement(image: "achieve1ImageSB", title: "achieve1TextCB", isAchieved: false),
+        NEGAchievement(image: "achieve2ImageSB", title: "achieve2TextCB", isAchieved: false),
+        NEGAchievement(image: "achieve3ImageSB", title: "achieve3TextCB", isAchieved: false),
+        NEGAchievement(image: "achieve4ImageSB", title: "achieve4TextCB", isAchieved: false),
+        NEGAchievement(image: "achieve5ImageSB", title: "achieve5TextCB", isAchieved: false),
     ] {
         didSet {
             saveAchievementsItem()

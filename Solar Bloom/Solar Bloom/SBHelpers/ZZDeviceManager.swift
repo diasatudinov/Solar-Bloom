@@ -1,3 +1,10 @@
+//
+//  ZZDeviceManager.swift
+//  Solar Bloom
+//
+//
+
+
 import UIKit
 
 class ZZDeviceManager {

@@ -1,3 +1,10 @@
+//
+//  CPSettingsViewModel.swift
+//  Solar Bloom
+//
+//
+
+
 import SwiftUI
 
 class CPSettingsViewModel: ObservableObject {

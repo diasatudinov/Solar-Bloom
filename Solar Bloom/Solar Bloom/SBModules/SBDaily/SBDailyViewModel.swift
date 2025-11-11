@@ -1,19 +1,19 @@
 //
-//  ZZAchievementsViewModel.swift
+//  SBDailyViewModel.swift
 //  Solar Bloom
 //
-//  Created by Dias Atudinov on 10.11.2025.
 //
 
+import SwiftUI
 
-class ZZAchievementsViewModel: ObservableObject {
+class SBDailyViewModel: ObservableObject {
     
     @Published var achievements: [NEGAchievement] = [
-        NEGAchievement(image: "achieve1ImageSB", title: "achieve1TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve2ImageSB", title: "achieve2TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve3ImageSB", title: "achieve3TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve4ImageSB", title: "achieve4TextCB", isAchieved: false),
-        NEGAchievement(image: "achieve5ImageSB", title: "achieve5TextCB", isAchieved: false),
+        NEGAchievement(image: "daily1ImageSB", title: "daily1TextCB", isAchieved: false),
+        NEGAchievement(image: "daily2ImageSB", title: "daily2TextCB", isAchieved: false),
+        NEGAchievement(image: "daily3ImageSB", title: "daily3TextCB", isAchieved: false),
+        NEGAchievement(image: "daily4ImageSB", title: "daily4TextCB", isAchieved: false),
+        NEGAchievement(image: "daily5ImageSB", title: "daily5TextCB", isAchieved: false),
     ] {
         didSet {
             saveAchievementsItem()
@@ -24,7 +24,7 @@ class ZZAchievementsViewModel: ObservableObject {
         loadAchievementsItem()
     }
     
-    private let userDefaultsAchievementsKey = "achievementsKeyCB"
+    private let userDefaultsAchievementsKey = "dailyKeySB"
     
     func achieveToggle(_ achive: NEGAchievement) {
         guard let index = achievements.firstIndex(where: { $0.id == achive.id })
