@@ -131,7 +131,7 @@ struct SBMenuView: View {
                 SBDailyView()
             }
             .fullScreenCover(isPresented: $showShop) {
-//                CBShopView(viewModel: shopVM)
+                SBShopView(viewModel: shopVM)
             }
         
     }
