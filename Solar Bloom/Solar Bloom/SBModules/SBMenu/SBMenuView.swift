@@ -119,7 +119,7 @@ struct SBMenuView: View {
                 }
             )
             .fullScreenCover(isPresented: $showGame) {
-//                GameView()
+                GameRootView()
             }
             .fullScreenCover(isPresented: $showAchievement) {
                 SBAchievementsView()

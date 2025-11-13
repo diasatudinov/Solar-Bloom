@@ -11,30 +11,30 @@ import SwiftUI
 final class CPShopViewModel: ObservableObject {
     // MARK: – Shop catalogues
     @Published var shopBgItems: [JGItem] = [
-        JGItem(name: "bg1", image: "bgImage1SB", icon: "gameBgIcon1SB", text: "gameBgText1SB", price: 100),
-        JGItem(name: "bg2", image: "bgImage2SB", icon: "gameBgIcon2SB", text: "gameBgText2SB", price: 100),
-        JGItem(name: "bg3", image: "bgImage3SB", icon: "gameBgIcon3SB", text: "gameBgText3SB", price: 100),
-        JGItem(name: "bg4", image: "bgImage4SB", icon: "gameBgIcon4SB", text: "gameBgText4SB", price: 100),
+        JGItem(name: "bg1", image: "tile_diamond", icon: "gameBgIcon1SB", text: "gameBgText1SB", price: 100),
+        JGItem(name: "bg2", image: "tile_diamond2", icon: "gameBgIcon2SB", text: "gameBgText2SB", price: 100),
+        JGItem(name: "bg3", image: "tile_diamond3", icon: "gameBgIcon3SB", text: "gameBgText3SB", price: 100),
+        JGItem(name: "bg4", image: "tile_diamond4", icon: "gameBgIcon4SB", text: "gameBgText4SB", price: 100),
         
     ]
     
     @Published var shopSkinItems: [JGItem] = [
-        JGItem(name: "skin1", image: "skinImage1SB", icon: "skinIcon1SB", text: "skinText1SB", price: 100),
-        JGItem(name: "skin2", image: "skinImage2SB", icon: "skinIcon2SB", text: "skinText2SB", price: 100),
-        JGItem(name: "skin3", image: "skinImage3SB", icon: "skinIcon3SB", text: "skinText3SB", price: 100),
-        JGItem(name: "skin4", image: "skinImage4SB", icon: "skinIcon4SB", text: "skinText4SB", price: 100),
+        JGItem(name: "skin1", image: "b_king_human", icon: "skinIcon1SB", text: "skinText1SB", price: 100),
+        JGItem(name: "skin2", image: "b_king_human2", icon: "skinIcon2SB", text: "skinText2SB", price: 100),
+        JGItem(name: "skin3", image: "b_king_human3", icon: "skinIcon3SB", text: "skinText3SB", price: 100),
+        JGItem(name: "skin4", image: "b_king_human4", icon: "skinIcon4SB", text: "skinText4SB", price: 100),
         
     ]
     
     // MARK: – Bought
     @Published var boughtBgItems: [JGItem] = [
-        JGItem(name: "bg1", image: "bgImage1SB", icon: "gameBgIcon1SB", text: "gameBgText1SB", price: 100),
+        JGItem(name: "bg1", image: "tile_diamond", icon: "gameBgIcon1SB", text: "gameBgText1SB", price: 100),
     ] {
         didSet { saveBoughtBg() }
     }
     
     @Published var boughtSkinItems: [JGItem] = [
-        JGItem(name: "skin1", image: "skinImage1SB", icon: "skinIcon1SB", text: "skinText1SB", price: 100),
+        JGItem(name: "skin1", image: "b_king_human", icon: "skinIcon1SB", text: "skinText1SB", price: 100),
     ] {
         didSet { saveBoughtSkins() }
     }
